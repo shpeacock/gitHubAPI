@@ -4,7 +4,8 @@ import {FormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {GithubService} from './github.service';
-
+import {HttpModule} from '@angular/http';
+import {newUser} from './newUser';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +13,8 @@ import {GithubService} from './github.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent],
