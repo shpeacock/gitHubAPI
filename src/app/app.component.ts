@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {GithubService} from './github.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +11,7 @@ export class AppComponent {
   score: number = null;
   newUser: Object = {};
   output: Object = {}
-  imgSrc: './assets/images/bojack.jpg';
+  imgSrc: string = '../assets/images/bojack.jpg';
   name: string;
   location: string;
 
